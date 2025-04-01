@@ -1,0 +1,79 @@
+.events-back {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: -950px;
+}
+
+.events {
+  z-index: 1;
+  position: relative;
+  margin: 20px;
+}
+
+.upcoming-cards, .past-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.uevent-1, .uevent-2, .uevent-3 {
+  background-image: conic-gradient(from 58deg at 20%80%, #37958a, #66d0c4);
+  height: 250px;
+  width: 350px;
+  border-radius: 20px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.description {
+  color: white;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.pevent-1, .pevent-2, .pevent-3 {
+  background-image: conic-gradient(from 150deg at 20%80%, #37958a, #66d0c4);
+  height: 400px;
+  width: 350px;
+  border-radius: 20px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.uevent-1:hover, .uevent-2:hover, .uevent-3:hover,
+.pevent-1:hover, .pevent-2:hover, .pevent-3:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Increase text size when hovered */
+.uevent-1:hover .event-title,
+.uevent-2:hover .event-title,
+.uevent-3:hover .event-title,
+.pevent-1:hover .pevent-title,
+.pevent-2:hover .pevent-title,
+.pevent-3:hover .pevent-title,
+.uevent-1:hover .description,
+.uevent-2:hover .description,
+.uevent-3:hover .description,
+.pevent-1:hover .description,
+.pevent-2:hover .description,
+.pevent-3:hover .description {
+  font-size: 1.1rem;
+}
+
+.event-title, .pevent-title {
+  color: aliceblue;
+  font-size: larger;
+  font-weight: 800;
+  text-align: center;
+  transition: font-size 0.3s ease-in-out;
+  text-decoration: underline;
+}
+
+.past-cards img {
+  height: 150px;
+  width: 200px;
+  padding-left: 70px;
+  border-radius: 10px;
+}
