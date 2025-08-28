@@ -1,4 +1,3 @@
-import React from "react";
 import "./AboutContentStyle.css";
 
 import img1 from "../assets/hero pics/3.jpg";
