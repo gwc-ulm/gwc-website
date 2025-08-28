@@ -1,7 +1,7 @@
 
 import React from 'react';
 import "./HeroStyle.css";
-import imgback from "../assets/hero pics/background.webp";
+import imgback from "../assets/hero pics/background.jpg";
 import {Link} from "react-router-dom";
 
 function Hero(){

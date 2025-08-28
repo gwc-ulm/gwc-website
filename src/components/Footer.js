@@ -17,16 +17,15 @@ function Footer(){
         <div className="footer-main">
              <div className="footer-left">
                <p><FaPhone size={20}/>  123-1234-123</p><br/>
-               <p><FaUniversity size={20}/>  Uni Ave 700, Monroe, La, 71212</p><br/>
+               <p><FaUniversity size={20}/>  700 University Ave, Monroe, LA 71209</p><br/>
                <p><MdEmail size={20}/> GWCULMonroe@ulm.edu</p><br/>
              </div>
 
              <div className="footer-right">
                <p>SOCIALS</p>
                
-               <a href=""><FaLinkedin size={20}  style={{marginRight:"30px", color:"black"}}/></a>
-               <a href=""><FaInstagram size={20} style={{marginRight:"30px", color: "black"}}/></a>
-               <a href=""><FaDiscord size={20} style={{marginRight:"30px", color: "black"}}/></a>
+               <a href="https://www.linkedin.com/company/girlswhocode-ulm/posts/?feedView=all"><FaLinkedin size={20}  style={{marginRight:"30px", color:"black"}}/></a>
+               <a href="https://www.instagram.com/girlswhocode_ulm/"><FaInstagram size={20} style={{marginRight:"30px", color: "black"}}/></a>
                <a href=""><SiGroupme size={20} style={{marginRight:"30px", color: "black"}}/></a>
                <a href=""><BsMessenger size={20} style={{marginRight:"30px", color: "black"}}/></a>
       

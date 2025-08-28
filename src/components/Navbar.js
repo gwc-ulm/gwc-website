@@ -29,7 +29,7 @@ function Navbar(){
                 </li>
 
                 <li>
-                    <Link   to="/resources">Resource</Link>
+                    <Link   to="/resources">Resources</Link>
                 </li>
 
                 <li>

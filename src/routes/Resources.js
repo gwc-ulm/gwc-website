@@ -1,17 +1,16 @@
 import React from 'react';
 import Footer from '../components/Footer';
-import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
-import Top from '../components/Top';
 import {Link} from 'react-router-dom';
+import ResourcesContent from '../components/ResourcesContent';
 
-function Resources(){
+function Join(){
     return(
-        <>
-        <Navbar/>
-        <h1>resources</h1>
-        <Footer/>
-        </>
+        <div>
+            <Navbar/>
+            <ResourcesContent/>
+            <Footer/>
+        </div>
     );
 }
-export default Resources;
+export default Join;

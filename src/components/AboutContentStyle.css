@@ -1,138 +1,140 @@
-.about-main{
+.about-container {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family:'Times New Roman', Times, serif;
 }
 
-.back{
+.about-overlay {
   width: 100%;
-  height: 100vh;
-  position: relative;
-}
-
-.about-background {
-  width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;
-    display: block;
-}
-
-.img1, .img2 {
-  display: block;
-  height: 300px;
-  width: 350px;
-  margin-left: 5%;
-}
-
-.img1{
-  border-top-right-radius: 70px;
-  border-bottom-left-radius: 70px;
-  margin-left: 10%;
-}
-
-.img2{
-  border-top-right-radius: 70px;
-  border-bottom-left-radius: 70px;
-  margin-left: 110%;
-}
-
-.about-main .content {
-  position: absolute;
-    /*transform: translate(-50%, -38%);
-    left: 50%;*/
-    top: 16%;
-    text-align: center;
-}
-
-.top-section {
+  height: 100%;
+  background: linear-gradient(180deg, #f9f0ef, #efe4e2);
+  padding: 3rem 1.5rem;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
 }
 
-.quote{
-  width: 60%;
-  font-size: 2.5rem;
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+/* Images section */
+.about-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-img-1, .about-img-2 {
+  width: 70%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.about-img-1 {
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+
+.about-img-2 {
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
+/* Text section */
+.about-text {
+  text-align: left;
+  color: #008080;
+}
+
+.about-quote {
+  font-size: 2.0rem;
   font-weight: bold;
-  color: #53bbba;
+  margin-bottom: 5rem;
+  line-height: 1.4;
   text-align: center;
-  margin-left: 25%;
-  margin-top: 5%;
 }
 
-.missions {
-  width: 40%;
-  margin-left: 50%;
-  margin-top: 18%;
-  background-color: #b7dddc;
-  color: rgb(197, 109, 22);
-  padding: 0.5%;
-  border-radius: 20px;
+/* Mission box */
+.mission-box {
+  background: #d8f0f2;
+  padding: 1.5rem;
+  border-radius: 1rem;
   box-shadow: 8px 8px 12px #FF91A4;
 }
 
-.missions h5 {
-  font-size: 1.7rem;
-  color: #eb3554;
+.mission-box h3 {
+  color: #c2002f;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
   font-weight: bold;
-  text-align: left;
-  padding-left: 30px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
-.missions ul {
-  margin-top: -20px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.mission-box ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-.mission-list li{
-  text-align: left;
-  list-style-type: "➤";
-  margin-bottom: 5px;
-  font-size: 1.2rem;
-  color: #eb3554;
+.mission-box li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #070606;
 }
 
-.missions:hover {
+.mission-box:hover {
   transform: scale(1.05);
   box-shadow: 8px 8px 12px #e93856;
   transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 
-@media screen and (max-width:1040px) {
-  .back{
-    height: 150vh;
+/* Responsive design */
+@media screen and (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
-  .img1, .img2 {
-    display: block;
-    height: 220px;
-    width: 270px;
-    margin-left: 5%;
-  }
-  .img1{
-    border-top-right-radius: 70px;
-    border-bottom-left-radius: 70px;
-    margin-left: 10%;
-  }
-  
-  .img2{
-    border-top-right-radius: 70px;
-    border-bottom-left-radius: 70px;
-    margin-left: 110%;
+  .about-images {
+    flex-direction: row;
+    justify-content: center;
   }
 
-  .top-section {
-    flex-wrap: wrpa;
+  .about-img-1, .about-img-2 {
+    max-width: 45%;
   }
 
-  .quote{
-    font-size: 1.6rem;
+  .about-text {
+    margin-top: 2rem;
   }
 
-  .missions {
-    margin: 5% auto;
-    width: 50%;
+  .about-quote {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-img-1, .about-img-2 {
+    max-width: 52%;
+  }
+
+  .about-quote {
+    font-size: 1.5rem;
+  }
+
+  .mission-box li {
+    font-size: 1rem;
   }
 }
