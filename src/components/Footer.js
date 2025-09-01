@@ -16,9 +16,9 @@ function Footer(){
 
         <div className="footer-main">
              <div className="footer-left">
-               <p><FaPhone size={20}/>  123-1234-123</p><br/>
+               <p><FaPhone size={20}/>  (318) 342-1000</p><br/>
                <p><FaUniversity size={20}/>  700 University Ave, Monroe, LA 71209</p><br/>
-               <p><MdEmail size={20}/> GWCULMonroe@ulm.edu</p><br/>
+               <p><MdEmail size={20}/> girlswhocodeulm@gmail.com</p><br/>
              </div>
 
              <div className="footer-right">
