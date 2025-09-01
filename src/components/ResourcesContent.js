@@ -15,6 +15,12 @@ const ResourcesContent = () => {
         "Great platform for computer science concepts, coding practice, and interview prep.",
       url: "https://www.geeksforgeeks.org/",
     },
+    {
+      title: "IBM SkillBuild ",
+      description:
+        "Girls who Code partnered with IBM to provide free access to SkillBuild, an online learning platform with courses in coding, data science, and more.",
+      url: "https://skills.yourlearning.ibm.com/activity/PLAN-9F6D64A63C71",
+    },
   ];
 
   const youtubeChannels = [
@@ -60,11 +66,11 @@ const ResourcesContent = () => {
 
       <h2 className="section-title">GroupMe</h2>
       <ul className="resource-list">
-          <li className="resource-item">
-            <a target="_blank" rel="noreferrer" href="https://girlswhocode.com/">
-              <p className="resource-description">Join the <strong>Girls Who Code @ULM GroupMe</strong> to access exclusive resources, event updates, and connect with other members!</p>
-            </a>
-          </li>
+        <li className="resource-item">
+          <a target="_blank" rel="noreferrer" href="https://girlswhocode.com/">
+            <p className="resource-description">Join the <strong>Girls Who Code @ULM GroupMe</strong> to access exclusive resources, event updates, and connect with other members!</p>
+          </a>
+        </li>
       </ul>
     </div>
   );
