@@ -25,11 +25,7 @@ const AboutContent = () => {
             <div className="mission-box">
               <h3>OUR MISSION</h3>
               <ul>
-<<<<<<< HEAD
                 <li>➤ Empowering Girls in Tech Field</li>
-=======
-                <li>➤ Empowering Girls in Tech</li>
->>>>>>> 0ee6572404c2b65c9b2ac1a16797595f51b2a4aa
                 <li>➤ Building a Supportive Community</li>
                 <li>➤ Teaching Coding Skills</li>
                 <li>➤ Promoting Leadership and Confidence</li>
