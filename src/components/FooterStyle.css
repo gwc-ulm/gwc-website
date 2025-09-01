@@ -1,0 +1,9 @@
+.footer-main{
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffe4c4;
+    padding-top: 20px;
+    padding-bottom: 5px; 
+    color: rgb(56, 54, 54);
+}

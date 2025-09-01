@@ -1,0 +1,90 @@
+.events-container {
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(180deg, #f9f0ef, #efe4e2);
+  font-family:'Times New Roman', Times, serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #008080;
+  margin: 2rem 0 1.5rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Shared card style */
+.event-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  flex: 1 1 280px;
+  max-width: 350px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Upcoming events cards (description only) */
+.event-card.upcoming h3 {
+  color: #c2002f;
+  margin-bottom: 0.8rem;
+  font-size: 1.25rem;
+}
+
+.event-card.upcoming p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Past events cards (with image) */
+.event-card.past {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card.past img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.event-card.past .card-content {
+  padding: 1rem 1.2rem;
+}
+
+.event-card.past h3 {
+  color: #c2002f;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.event-card.past p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .event-card {
+    max-width: 100%;
+  }
+}

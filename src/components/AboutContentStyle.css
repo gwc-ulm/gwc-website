@@ -1,0 +1,140 @@
+.about-container {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.about-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #f9f0ef, #efe4e2);
+  padding: 3rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+/* Images section */
+.about-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-img-1, .about-img-2 {
+  width: 70%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.about-img-1 {
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+
+.about-img-2 {
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
+/* Text section */
+.about-text {
+  text-align: left;
+  color: #008080;
+}
+
+.about-quote {
+  font-size: 2.0rem;
+  font-weight: bold;
+  margin-bottom: 5rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Mission box */
+.mission-box {
+  background: #d8f0f2;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 8px 8px 12px #FF91A4;
+}
+
+.mission-box h3 {
+  color: #c2002f;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.mission-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mission-box li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #070606;
+}
+
+.mission-box:hover {
+  transform: scale(1.05);
+  box-shadow: 8px 8px 12px #e93856;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media screen and (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-images {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .about-img-1, .about-img-2 {
+    max-width: 45%;
+  }
+
+  .about-text {
+    margin-top: 2rem;
+  }
+
+  .about-quote {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-img-1, .about-img-2 {
+    max-width: 52%;
+  }
+
+  .about-quote {
+    font-size: 1.5rem;
+  }
+
+  .mission-box li {
+    font-size: 1rem;
+  }
+}

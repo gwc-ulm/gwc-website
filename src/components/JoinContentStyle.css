@@ -1,0 +1,106 @@
+.join-container {
+  padding: 3rem 1.5rem;
+  background: linear-gradient(180deg, #f9f0ef, #efe4e2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family:'Times New Roman', Times, serif;
+}
+
+
+.join-description {
+  margin-top: 3rem;
+  max-width: 900px;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.join-instruction {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #c2002f;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+
+/* QR grid layout */
+.qr-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.qr-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  flex: 1 1 300px;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.qr-img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon:hover {
+  transform: scale(1.5);
+}
+
+.qr-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.arrow-icon {
+  color: #008080;
+  width: 22px;
+  height: 22px;
+}
+
+/* Hide mobile arrow on desktop and vice versa */
+.desktop-arrow {
+  display: inline-block;
+}
+.mobile-arrow {
+  display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .join-description {
+    font-size: 1rem;
+  }
+
+  .qr-card {
+    max-width: 100%;
+  }
+
+  .desktop-arrow {
+    display: inline-block;
+  }
+  .mobile-arrow {
+    display: inline-block;
+  }
+}
