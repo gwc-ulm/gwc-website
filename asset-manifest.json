@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/gwc-website/static/css/main.b0aa76af.css",
+    "main.js": "/gwc-website/static/js/main.e665bc8c.js",
+    "static/js/488.ee872fcc.chunk.js": "/gwc-website/static/js/488.ee872fcc.chunk.js",
+    "static/media/past5.JPEG": "/gwc-website/static/media/past5.424724c49c4bf85e7926.JPEG",
+    "static/media/past2.jpg": "/gwc-website/static/media/past2.c654e5fef6589f4d2ee6.jpg",
+    "static/media/past1.JPEG": "/gwc-website/static/media/past1.a9cf52ec0e7dc658edb1.JPEG",
+    "static/media/past3.JPEG": "/gwc-website/static/media/past3.5d09926b1f5e97cba2ec.JPEG",
+    "static/media/past6.JPEG": "/gwc-website/static/media/past6.caa97c4aa5577f71417c.JPEG",
+    "static/media/past4.JPEG": "/gwc-website/static/media/past4.91a37d4daf375a552b6e.JPEG",
+    "static/media/2.jpg": "/gwc-website/static/media/2.6bb259f3b9456a3f17cb.jpg",
+    "static/media/qr.png": "/gwc-website/static/media/qr.12f6653a72baa2a99168.png",
+    "static/media/background.jpg": "/gwc-website/static/media/background.f9222e7100cdd1b0e158.jpg",
+    "static/media/3.jpg": "/gwc-website/static/media/3.81ada8746bb68a79edbd.jpg",
+    "static/media/hq.png": "/gwc-website/static/media/hq.380f562d5185a88c6f09.png",
+    "static/media/past0.jpg": "/gwc-website/static/media/past0.887c0b57a6a9c91a8e14.jpg",
+    "static/media/logo.png": "/gwc-website/static/media/logo.ebad2de902463672e120.png",
+    "index.html": "/gwc-website/index.html",
+    "main.b0aa76af.css.map": "/gwc-website/static/css/main.b0aa76af.css.map",
+    "main.e665bc8c.js.map": "/gwc-website/static/js/main.e665bc8c.js.map",
+    "488.ee872fcc.chunk.js.map": "/gwc-website/static/js/488.ee872fcc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0aa76af.css",
+    "static/js/main.e665bc8c.js"
+  ]
+}
