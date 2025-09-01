@@ -13,7 +13,7 @@ function Navbar(){
         <>
 
         <div className='header'>
-            <img src={logo} className='header-logo'></img>
+            <img src={logo} className='header-logo' alt=''></img>
 
             <ul className={click ? "nav-menu active" : "nav-menu"}>
                 <li>

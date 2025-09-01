@@ -41,6 +41,7 @@
     color:#c2002f;
     font-weight: bolder;
     text-shadow: 5px 5px 8px #4bddea;
+    cursor: pointer;
 }
 
 .hamburger {

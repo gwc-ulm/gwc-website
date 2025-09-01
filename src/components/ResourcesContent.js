@@ -61,7 +61,7 @@ const ResourcesContent = () => {
       <h2 className="section-title">GroupMe</h2>
       <ul className="resource-list">
           <li className="resource-item">
-            <a target="_blank">
+            <a target="_blank" rel="noreferrer" href="https://girlswhocode.com/">
               <p className="resource-description">Join the <strong>Girls Who Code @ULM GroupMe</strong> to access exclusive resources, event updates, and connect with other members!</p>
             </a>
           </li>

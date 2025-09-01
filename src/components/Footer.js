@@ -5,7 +5,6 @@ import { FaInstagram } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { FaUniversity } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaDiscord } from "react-icons/fa";
 import { SiGroupme } from "react-icons/si";
 import { BsMessenger } from "react-icons/bs";
 
@@ -26,8 +25,8 @@ function Footer(){
                
                <a href="https://www.linkedin.com/company/girlswhocode-ulm/posts/?feedView=all"><FaLinkedin size={20}  style={{marginRight:"30px", color:"black"}}/></a>
                <a href="https://www.instagram.com/girlswhocode_ulm/"><FaInstagram size={20} style={{marginRight:"30px", color: "black"}}/></a>
-               <a href=""><SiGroupme size={20} style={{marginRight:"30px", color: "black"}}/></a>
-               <a href=""><BsMessenger size={20} style={{marginRight:"30px", color: "black"}}/></a>
+               <a href="https://www.instagram.com/girlswhocode_ulm/"><SiGroupme size={20} style={{marginRight:"30px", color: "black"}}/></a>
+               <a href="https://www.instagram.com/girlswhocode_ulm/"><BsMessenger size={20} style={{marginRight:"30px", color: "black"}}/></a>
       
              </div>
         </div>
