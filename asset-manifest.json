@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gwc-website/static/css/main.b0aa76af.css",
-    "main.js": "/gwc-website/static/js/main.e665bc8c.js",
+    "main.css": "/gwc-website/static/css/main.b8b6a091.css",
+    "main.js": "/gwc-website/static/js/main.76067494.js",
     "static/js/488.ee872fcc.chunk.js": "/gwc-website/static/js/488.ee872fcc.chunk.js",
     "static/media/past5.JPEG": "/gwc-website/static/media/past5.424724c49c4bf85e7926.JPEG",
     "static/media/past2.jpg": "/gwc-website/static/media/past2.c654e5fef6589f4d2ee6.jpg",
@@ -17,12 +17,12 @@
     "static/media/past0.jpg": "/gwc-website/static/media/past0.887c0b57a6a9c91a8e14.jpg",
     "static/media/logo.png": "/gwc-website/static/media/logo.ebad2de902463672e120.png",
     "index.html": "/gwc-website/index.html",
-    "main.b0aa76af.css.map": "/gwc-website/static/css/main.b0aa76af.css.map",
-    "main.e665bc8c.js.map": "/gwc-website/static/js/main.e665bc8c.js.map",
+    "main.b8b6a091.css.map": "/gwc-website/static/css/main.b8b6a091.css.map",
+    "main.76067494.js.map": "/gwc-website/static/js/main.76067494.js.map",
     "488.ee872fcc.chunk.js.map": "/gwc-website/static/js/488.ee872fcc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0aa76af.css",
-    "static/js/main.e665bc8c.js"
+    "static/css/main.b8b6a091.css",
+    "static/js/main.76067494.js"
   ]
 }
