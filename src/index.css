@@ -34,3 +34,12 @@ code {
   color: #fff;
   transition: 0.3s;
 }
+
+@media screen and (max-width: 480px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    width: auto;
+    min-width: 120px;
+  }
+}

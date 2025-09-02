@@ -6,4 +6,60 @@
     padding-top: 20px;
     padding-bottom: 5px; 
     color: rgb(56, 54, 54);
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+    padding: 10px 20px;
+}
+
+.footer-left p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-right p {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px;
+    }
+    
+    .footer-left {
+        margin-bottom: 20px;
+    }
+    
+    .footer-left p {
+        justify-content: center;
+        font-size: 0.9rem;
+    }
+    
+    .footer-right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-left p {
+        font-size: 0.85rem;
+        flex-wrap: wrap;
+    }
+    
+    .footer-main {
+        padding: 15px 5px;
+    }
 }

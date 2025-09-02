@@ -87,3 +87,32 @@
         z-index: 2;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .header-logo {
+        height: 50px;
+        width: 75px;
+        margin-left: 3%;
+    }
+    
+    .header {
+        height: 50px;
+        padding: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-logo {
+        height: 45px;
+        width: 65px;
+        margin-left: 2%;
+    }
+    
+    .header {
+        height: 45px;
+    }
+    
+    .nav-menu li a {
+        font-size: 1.5rem;
+    }
+}
