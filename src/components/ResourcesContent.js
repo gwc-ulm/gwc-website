@@ -36,6 +36,12 @@ const ResourcesContent = () => {
         "Full courses on web development, Python, data science, and more—all for free.",
       url: "https://www.youtube.com/c/Freecodecamp",
     },
+    {
+      title: "Abdul Bari",
+      description:
+        "In-depth explanations of computer science concepts, algorithms, and data structures.",
+      url: "https://youtu.be/0IAPZzGSbME?si=FLmdEZWTgAphveMB",
+    },
   ];
 
   return (
