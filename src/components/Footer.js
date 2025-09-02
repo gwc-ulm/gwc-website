@@ -23,10 +23,9 @@ function Footer() {
         <div className="footer-right">
           <p>SOCIALS</p>
 
-          <a href="https://www.linkedin.com/company/girlswhocode-ulm/posts/?feedView=all"><FaLinkedin size={20} style={{ marginRight: "30px", color: "black" }} /></a>
+          <a href="https://www.linkedin.com/company/girlswhocode-ulm/posts/?feedView=all"> <FaLinkedin size={20} style={{ marginRight: "30px", color: "black" }} /></a>
           <a href="https://www.instagram.com/girlswhocode_ulm/"><FaInstagram size={20} style={{ marginRight: "30px", color: "black" }} /></a>
           <a href="https://groupme.com/join_group/104179666/lhLuPhw2"><SiGroupme size={20} style={{ marginRight: "30px", color: "black" }} /></a>
-
         </div>
       </div>
     </>
