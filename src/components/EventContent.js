@@ -8,15 +8,11 @@ import past3 from "../assets/hero pics/past3.JPEG";
 import past4 from "../assets/hero pics/past4.JPEG";
 import past5 from "../assets/hero pics/past5.JPEG";
 import past6 from "../assets/hero pics/past6.JPEG";
+import past7 from "../assets/hero pics/past7.jpeg";
 
 const EventContent = () => {
   // You can later fetch this from an API or database
   const upcomingEvents = [
-    {
-      title: "Kickoff / Interest Meeting",
-      description:
-        "Join us for our Kickoff / Interest Meeting! 🎉 This is the perfect chance to learn more about Girls Who Code at ULM, meet inspiring peers, and discover how you can be part of our growing community. Let’s spread the word and bring more future women in tech onboard!"
-    },
     {
       title: "Prototyping",
       description:
@@ -66,6 +62,12 @@ const EventContent = () => {
       description:
         "An inspiring session with 25+ bright girls at Martin Luther King Jr. Junior High, where members introduced the fundamentals of web design. From brainstorming ideas to writing their first code, the energy and creativity were truly unmatched.",
       image: past6
+    },
+    {
+      title: "Kickoff / Interest Meeting",
+      description:
+        "We launched our semester with an engaging kickoff session where students learned about Girls Who Code at ULM, connected with peers, and explored opportunities to get involved. The event set the tone for building a supportive community and inspiring more women in tech to join our mission.",
+        image: past7
     }
   ];
 
