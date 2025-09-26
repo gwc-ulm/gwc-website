@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./EventContentStyle.css";
 
 import past0 from "../assets/hero pics/past0.jpg";
@@ -11,13 +11,14 @@ import past6 from "../assets/hero pics/past6.JPEG";
 import past7 from "../assets/hero pics/past7.jpeg";
 
 const EventContent = () => {
-  // You can later fetch this from an API or database
+  const [showPopup, setShowPopup] = useState(false);
+
   const upcomingEvents = [
     {
-      title: "Prototyping",
+      title: "Protothon",
       description:
-        "Bring your creativity to life at our Prototyping Event! 💡 Share a detailed idea that could make a real impact in the community—no working model needed. Open to all majors!"
-    }
+        "Bring your creativity to life at our Prototyping Event! 💡 Share a detailed idea that could make a real impact in the community - no working model needed. Open to all majors!",
+    },
   ];
 
   const pastEvents = [
@@ -25,50 +26,50 @@ const EventContent = () => {
       title: "Introduction to the New Chapter",
       description:
         "Our very first Girls Who Code chapter meeting brought together students of all coding levels to kick off an exciting journey! Members got the chance to meet the board, connect with peers, and share ideas for future events.",
-      image: past0
+      image: past0,
     },
     {
       title: "Chai, Cards, and Connections Night",
       description:
         "An evening filled with laughter, board games, and warm cups of masala chai! Members bonded over fun activities while strengthening connections within the Girls Who Code community.",
-      image: past1
+      image: past1,
     },
     {
       title: "Fundamentals of Web Design Workshop",
       description:
-        "In collaboration with the Girl Scouts of Louisiana – Pines to the Gulf, we hosted an engaging workshop on web design fundamentals. The kids impressed us with their creativity, curiosity, and eagerness to learn!",
-      image: past2
+        "In collaboration with the Girl Scouts of Louisiana - Pines to the Gulf, we hosted an engaging workshop on web design fundamentals. The kids impressed us with their creativity, curiosity, and eagerness to learn!",
+      image: past2,
     },
     {
       title: "Boost Your Resume with AI",
       description:
         "A dynamic session where members learned to enhance their resumes with AI tools. The event featured two inspiring speakers who shared their journeys in computer science and how AI has shaped their careers.",
-      image: past3
+      image: past3,
     },
     {
       title: "Resume Review",
       description:
-        "In partnership with ULM’s Career Development Center, members received expert feedback to polish their resumes for internships, jobs, and scholarships—helping them stand out with confidence.",
-      image: past4
+        "In partnership with ULM’s Career Development Center, members received expert feedback to polish their resumes for internships, jobs, and scholarships-helping them stand out with confidence.",
+      image: past4,
     },
     {
       title: "Master in GIT",
       description:
         "A hands-on session introducing GitHub and version control basics. Members learned how to collaborate on projects effectively and heard insights from Ashamsa Adhikari, a recent graduate now working as a software engineer at DXC Technology.",
-      image: past5
+      image: past5,
     },
     {
       title: "High School Workshop",
       description:
         "An inspiring session with 25+ bright girls at Martin Luther King Jr. Junior High, where members introduced the fundamentals of web design. From brainstorming ideas to writing their first code, the energy and creativity were truly unmatched.",
-      image: past6
+      image: past6,
     },
     {
       title: "Kickoff / Interest Meeting",
       description:
         "We launched our semester with an engaging kickoff session where students learned about Girls Who Code at ULM, connected with peers, and explored opportunities to get involved. The event set the tone for building a supportive community and inspiring more women in tech to join our mission.",
-        image: past7
-    }
+      image: past7,
+    },
   ];
 
   return (
@@ -78,7 +79,12 @@ const EventContent = () => {
         {upcomingEvents.map((event, index) => (
           <div className="event-card upcoming" key={index}>
             <h3>{event.title}</h3>
-            <p>{event.description}</p>
+            <p>
+              {event.description}{" "}
+              <a onClick={() => setShowPopup(true)} className="more-info-link">
+                Click for more info
+              </a>
+            </p>
           </div>
         ))}
       </div>
@@ -95,6 +101,32 @@ const EventContent = () => {
           </div>
         ))}
       </div>
+
+      {/* Popup Modal */}
+      {showPopup && (
+        <div className="popup-overlay">
+          <div className="popup-content">
+            <button className="popup-close" onClick={() => setShowPopup(false)}>
+              ✖
+            </button>
+            <h1>Protothon (Prototyping)</h1>
+            <div className="popup-details">
+              <h3>Day 1 (Workshop)</h3>
+              <p>
+                <strong>Date:</strong> 15th October, Wednesday <br />
+                <strong>Location:</strong> Hemphill Hall 134 <br />
+                <strong>Time:</strong> 5:30 pm - 7:30 pm
+              </p>
+              <h3>Day 2 (Presentation)</h3>
+              <p>
+                <strong>Date:</strong> 18th October, Saturday <br />
+                <strong>Location:</strong> Hangar Hall A <br />
+                <strong>Time:</strong> 9 am - 1 pm
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
