@@ -8,13 +8,12 @@ import past3 from "../assets/hero pics/past3.JPEG";
 import past4 from "../assets/hero pics/past4.JPEG";
 import past5 from "../assets/hero pics/past5.JPEG";
 import past6 from "../assets/hero pics/past6.JPEG";
-import past7 from "../assets/hero pics/past7.jpeg";
+import past7 from "../assets/hero pics/past7.JPEG";
 import prototype from "../assets/hero pics/Protothon.png";
 import prototype2 from "../assets/hero pics/Protothon2.png";
 
 const EventContent = () => {
   const [showPopup, setShowPopup] = useState(false);
-
   const upcomingEvents = [
     {
       title: "Protothon",
