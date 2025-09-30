@@ -21,6 +21,51 @@ const ResourcesContent = () => {
         "Girls who Code partnered with IBM to provide free access to SkillBuild, an online learning platform with courses in coding, data science, and more.",
       url: "https://skills.yourlearning.ibm.com/activity/PLAN-9F6D64A63C71",
     },
+    {
+      title: "Perplexity AI Pro",
+      description:
+        "AI-powered search engine with free 1-year Pro subscription for students. Get accurate answers and research assistance.",
+      url: "https://plex.it/referrals/EE33W4JK",
+    },
+    {
+      title: "Google Gemini",
+      description:
+        "Google's advanced AI assistant for coding help, research, writing, and creative problem-solving.",
+      url: "https://gemini.google.com/",
+    },
+  ];
+
+  const aiLinks = [
+    {
+      title: "ChatGPT",
+      description:
+        "OpenAI's conversational AI for code assistance, debugging, and learning programming concepts.",
+      url: "https://chat.openai.com/",
+    },
+    {
+      title: "GitHub Copilot",
+      description:
+        "AI-powered code completion tool that helps you write code faster and more efficiently.",
+      url: "https://github.com/features/copilot",
+    },
+    {
+      title: "Google AI for Everyone",
+      description:
+        "Free courses and resources to learn AI fundamentals, machine learning, and data science.",
+      url: "https://ai.google/education/",
+    },
+    {
+      title: "Coursera AI Courses",
+      description:
+        "University-level AI and machine learning courses from top institutions.",
+      url: "https://www.coursera.org/browse/data-science/machine-learning",
+    },
+    {
+      title: "Kaggle Learn",
+      description:
+        "Free micro-courses on machine learning, data science, and AI with hands-on practice.",
+      url: "https://www.kaggle.com/learn",
+    },
   ];
 
   const youtubeChannels = [
@@ -65,6 +110,18 @@ const ResourcesContent = () => {
             <a href={channel.url} target="_blank" rel="noopener noreferrer">
               <span className="resource-title">{channel.title}</span>
               <p className="resource-description">{channel.description}</p>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <h2 className="section-title">AI Resources</h2>
+      <ul className="resource-list">
+        {aiLinks.map((link, index) => (
+          <li key={index} className="resource-item">
+            <a href={link.url} target="_blank" rel="noopener noreferrer">
+              <span className="resource-title">{link.title}</span>
+              <p className="resource-description">{link.description}</p>
             </a>
           </li>
         ))}

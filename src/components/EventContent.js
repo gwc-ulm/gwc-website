@@ -9,6 +9,8 @@ import past4 from "../assets/hero pics/past4.JPEG";
 import past5 from "../assets/hero pics/past5.JPEG";
 import past6 from "../assets/hero pics/past6.JPEG";
 import past7 from "../assets/hero pics/past7.jpeg";
+import prototype from "../assets/hero pics/Protothon.png";
+import prototype2 from "../assets/hero pics/Protothon2.png";
 
 const EventContent = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -80,11 +82,11 @@ const EventContent = () => {
           <div className="event-card upcoming" key={index}>
             <h3>{event.title}</h3>
             <p>
-              {event.description}{" "}
-              <a onClick={() => setShowPopup(true)} className="more-info-link">
-                Click for more info
-              </a>
+              {event.description}
             </p>
+            <button onClick={() => setShowPopup(true)} className="learn-more-btn">
+              Learn More
+            </button>
           </div>
         ))}
       </div>
@@ -104,25 +106,26 @@ const EventContent = () => {
 
       {/* Popup Modal */}
       {showPopup && (
-        <div className="popup-overlay">
-          <div className="popup-content">
+        <div className="popup-overlay" onClick={() => setShowPopup(false)}>
+          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
             <button className="popup-close" onClick={() => setShowPopup(false)}>
               ✖
             </button>
-            <h1>Protothon (Prototyping)</h1>
-            <div className="popup-details">
-              <h3>Day 1 (Workshop)</h3>
-              <p>
-                <strong>Date:</strong> 15th October, Wednesday <br />
-                <strong>Location:</strong> Hemphill Hall 134 <br />
-                <strong>Time:</strong> 5:30 pm - 7:30 pm
-              </p>
-              <h3>Day 2 (Presentation)</h3>
-              <p>
-                <strong>Date:</strong> 18th October, Saturday <br />
-                <strong>Location:</strong> Hangar Hall A <br />
-                <strong>Time:</strong> 9 am - 1 pm
-              </p>
+            <div className="popup-header">
+              <h1>Protothon 2025</h1>
+              <h6>A collaborative, hands-on event where students tackle real-world challenges through product design and prototyping!</h6>
+            </div>
+            <div className="popup-images">
+              <img
+                src={prototype2}
+                alt="Protothon Event Details"
+                className="popup-image"
+              />
+              <img
+                src={prototype}
+                alt="Protothon Additional Info"
+                className="popup-image"
+              />
             </div>
           </div>
         </div>
